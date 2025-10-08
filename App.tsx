@@ -16,22 +16,22 @@ export default function App() {
           <Futbolista nombre={"Casillas"} dorsal={1} puesto={"Portero"} colorFondo={"#a2d6eeff"} />
         </View>
         <View style={styles.fila}>
-          <Futbolista nombre={"Ramos"} dorsal={15} puesto={"Portero"} />
-          <Futbolista nombre={"Piqué"} dorsal={3} puesto={"Portero"} />
-          <Futbolista nombre={"Puyol"} dorsal={5} puesto={"Portero"} />
-          <Futbolista nombre={"Capdevila"} dorsal={11} puesto={"Portero"} />
+          <Futbolista nombre={"Ramos"} dorsal={15} puesto={"Defensa"} />
+          <Futbolista nombre={"Piqué"} dorsal={3} puesto={"Defensa"} />
+          <Futbolista nombre={"Puyol"} dorsal={5} puesto={"Defensa"} />
+          <Futbolista nombre={"Capdevila"} dorsal={11} puesto={"Defensa"} />
         </View>
         <View style={styles.fila}>
-          <Futbolista nombre={"Busquets"} dorsal={16} puesto={"Portero"} />
-          <Futbolista nombre={"Alonso"} dorsal={14} puesto={"Portero"} />
+          <Futbolista nombre={"Busquets"} dorsal={16} puesto={"Centrocampista"} />
+          <Futbolista nombre={"Alonso"} dorsal={14} puesto={"Centrocampista"} />
         </View>
         <View style={styles.fila}>
-          <Futbolista nombre={"Xavi"} dorsal={8} puesto={"Portero"} />
-          <Futbolista nombre={"Iniesta"} dorsal={6} puesto={"Portero"} />
-          <Futbolista nombre={"Pedro"} dorsal={18} puesto={"Portero"} />
+          <Futbolista nombre={"Xavi"} dorsal={8} puesto={"Centrocampista"} />
+          <Futbolista nombre={"Iniesta"} dorsal={6} puesto={"Centrocampista"} />
+          <Futbolista nombre={"Pedro"} dorsal={18} puesto={"Centrocampista"} />
         </View>
         <View style={styles.fila}>
-          <Futbolista nombre={"Villa"} dorsal={7} puesto={"Portero"} />
+          <Futbolista nombre={"Villa"} dorsal={7} puesto={"Delantero"} />
         </View>
       </View>
     </View>
