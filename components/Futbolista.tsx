@@ -1,7 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-export default function Futbolista({nombre,dorsal,puesto,colorFondo="styles.contenedor.backgroundColor"}) {
+type FutbolistaProps = {
+    nombre:string
+    dorsal:number
+    puesto:string
+    colorFondo?:string
+}
+
+export default function Futbolista({nombre,dorsal,puesto,colorFondo="styles.contenedor.backgroundColor"}:FutbolistaProps) {
   return (
     <View style={[styles.contenedor, {backgroundColor:colorFondo}]}>
       <Text style={styles.nombre}>{nombre}</Text>
