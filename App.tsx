@@ -1,20 +1,60 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+import { Image } from 'expo-image'
+import Futbolista from './components/Futbolista'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={styles.contenedor}>
+      <Image
+        source={require("./assets/campeones.png")}
+        style={styles.logo}
+        contentFit={"fill"}
+      />
+      <View style={styles.campo}>
+        <View style={styles.fila}>
+          <Futbolista nombre={"Casillas"} dorsal={1} puesto={"Portero"} colorFondo={"#a2d6eeff"} />
+        </View>
+        <View style={styles.fila}>
+          <Futbolista nombre={"Ramos"} dorsal={15} puesto={"Portero"} />
+          <Futbolista nombre={"Piqué"} dorsal={3} puesto={"Portero"} />
+          <Futbolista nombre={"Puyol"} dorsal={5} puesto={"Portero"} />
+          <Futbolista nombre={"Capdevila"} dorsal={11} puesto={"Portero"} />
+        </View>
+        <View style={styles.fila}>
+          <Futbolista nombre={"Busquets"} dorsal={16} puesto={"Portero"} />
+          <Futbolista nombre={"Alonso"} dorsal={14} puesto={"Portero"} />
+        </View>
+        <View style={styles.fila}>
+          <Futbolista nombre={"Xavi"} dorsal={8} puesto={"Portero"} />
+          <Futbolista nombre={"Iniesta"} dorsal={6} puesto={"Portero"} />
+          <Futbolista nombre={"Pedro"} dorsal={18} puesto={"Portero"} />
+        </View>
+        <View style={styles.fila}>
+          <Futbolista nombre={"Villa"} dorsal={7} puesto={"Portero"} />
+        </View>
+      </View>
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  contenedor: {
+    flex: 1
   },
-});
+  logo: {
+    width: "100%",
+    height: 250
+  },
+  campo: {
+    flex: 1,
+    justifyContent: "center",
+    backgroundColor: "#468944ff",
+    padding: 20,
+    rowGap: 20
+  },
+  fila: {
+    flexDirection: "row",
+    justifyContent: "space-around"
+  }
+})
