@@ -50,7 +50,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     backgroundColor: "#468944ff",
-    padding: 20,
     rowGap: 20
   },
   fila: {
