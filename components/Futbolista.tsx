@@ -8,7 +8,7 @@ type FutbolistaProps = {
     colorFondo?:string
 }
 
-export default function Futbolista({nombre,dorsal,puesto,colorFondo="styles.contenedor.backgroundColor"}:FutbolistaProps) {
+export default function Futbolista({nombre,dorsal,puesto,colorFondo=styles.contenedor.backgroundColor}:FutbolistaProps) {
   return (
     <View style={[styles.contenedor, {backgroundColor:colorFondo}]}>
       <Text style={styles.nombre}>{nombre}</Text>
