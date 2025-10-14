@@ -8,11 +8,20 @@ type FutbolistaProps = {
     colorFondo?:string
 }
 
-export default function Futbolista({nombre,dorsal,puesto,colorFondo=styles.contenedor.backgroundColor}:FutbolistaProps) {
+export default function Futbolista({nombre,dorsal,puesto,style={}}:FutbolistaProps}) {
+  style = StyleSheet.flatten(style)
+  const estiloContenedorAmpliado = {
+    width:style.width ?? styles.contenedor.width,
+    height:style.height ?? styles.contenedor.height,
+    backgroundColor:style.backgroundColor ?? styles.contenedor.backgroundColor
+  }
+  const estiloDorsalAmpliado = {
+    color: style.color ?? styles.dorsal.color
+  }
   return (
-    <View style={[styles.contenedor, {backgroundColor:colorFondo}]}>
+    <View style={[styles.contenedor, estiloContenedorAmpliado]}>
       <Text style={styles.nombre}>{nombre}</Text>
-      <Text style={styles.dorsal}>{dorsal}</Text>
+      <Text style={[styles.dorsal, estiloDorsalAmpliado]}>{dorsal}</Text>
       <Text style={styles.puesto}>{puesto}</Text>
     </View>
   )

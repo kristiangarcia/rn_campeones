@@ -13,7 +13,7 @@ export default function App() {
       />
       <View style={styles.campo}>
         <View style={styles.fila}>
-          <Futbolista nombre={"Casillas"} dorsal={1} puesto={"Portero"} colorFondo={"#a2d6eeff"} />
+          <Futbolista nombre={"Casillas"} dorsal={1} puesto={"Portero"} style={styles.estiloPortero} />
         </View>
         <View style={styles.fila}>
           <Futbolista nombre={"Ramos"} dorsal={15} puesto={"Defensa"} />
@@ -55,5 +55,8 @@ const styles = StyleSheet.create({
   fila: {
     flexDirection: "row",
     justifyContent: "space-around"
+  },
+  estiloPortero: {
+    backgroundColor: "#a2d6eeff"
   }
 })
