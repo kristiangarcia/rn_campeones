@@ -1,4 +1,4 @@
-import { StyleProp, StyleSheet, Text, View, ViewStyle } from 'react-native'
+import { Pressable, StyleProp, StyleSheet, Text, ViewStyle } from 'react-native'
 import React from 'react'
 
 type FutbolistaProps = {
@@ -6,13 +6,14 @@ type FutbolistaProps = {
     dorsal:number
     puesto:string
     style?:StyleProp<FutbolistaStyle>
+    onPress:null
 }
 
 type FutbolistaStyle = ViewStyle & {
     color?: string
 }
 
-export default function Futbolista({nombre,dorsal,puesto,style={}}:FutbolistaProps) {
+export default function Futbolista({nombre,dorsal,puesto,style={},onPress=null}:FutbolistaProps) {
   style = StyleSheet.flatten(style)
   const estiloContenedorAmpliado = {
     width:style.width ?? styles.contenedor.width,
@@ -23,11 +24,11 @@ export default function Futbolista({nombre,dorsal,puesto,style={}}:FutbolistaPro
     color: style.color ?? styles.dorsal.color
   }
   return (
-    <View style={[styles.contenedor, estiloContenedorAmpliado]}>
+    <Pressable style={[styles.contenedor, estiloContenedorAmpliado]} onPress={onPress}>
       <Text style={styles.nombre}>{nombre}</Text>
       <Text style={[styles.dorsal, estiloDorsalAmpliado]}>{dorsal}</Text>
       <Text style={styles.puesto}>{puesto}</Text>
-    </View>
+    </Pressable>
   )
 }
 

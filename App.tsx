@@ -2,38 +2,20 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Image } from 'expo-image'
 import Futbolista from './components/Futbolista'
+import FilaFutbolistas from './components/FilaFutbolistas'
 
 export default function App() {
+  const listaJugadores = require("./data/jugadores.json")
   return (
     <View style={styles.contenedor}>
-      <Image
-        source={require("./assets/campeones.png")}
-        style={styles.logo}
-        contentFit={"fill"}
-      />
-      <View style={styles.campo}>
-        <View style={styles.fila}>
-          <Futbolista nombre={"Casillas"} dorsal={1} puesto={"Portero"} style={styles.estiloPortero} />
+      <Image source={require("./assets/campeones.png")} style={styles.logo} contentFit={"cover"} />
+        <View style={styles.campo}>
+          <FilaFutbolistas listaDorsales={[1]} />
+          <FilaFutbolistas listaDorsales={[15,3,5,11]} />
+          <FilaFutbolistas listaDorsales={[16,14]} />
+          <FilaFutbolistas listaDorsales={[8,6,18]} />
+          <FilaFutbolistas listaDorsales={[7]} />
         </View>
-        <View style={styles.fila}>
-          <Futbolista nombre={"Ramos"} dorsal={15} puesto={"Defensa"} />
-          <Futbolista nombre={"Piqué"} dorsal={3} puesto={"Defensa"} />
-          <Futbolista nombre={"Puyol"} dorsal={5} puesto={"Defensa"} />
-          <Futbolista nombre={"Capdevila"} dorsal={11} puesto={"Defensa"} />
-        </View>
-        <View style={styles.fila}>
-          <Futbolista nombre={"Busquets"} dorsal={16} puesto={"Centrocampista"} />
-          <Futbolista nombre={"Alonso"} dorsal={14} puesto={"Centrocampista"} />
-        </View>
-        <View style={styles.fila}>
-          <Futbolista nombre={"Xavi"} dorsal={8} puesto={"Centrocampista"} />
-          <Futbolista nombre={"Iniesta"} dorsal={6} puesto={"Centrocampista"} />
-          <Futbolista nombre={"Pedro"} dorsal={18} puesto={"Centrocampista"} />
-        </View>
-        <View style={styles.fila}>
-          <Futbolista nombre={"Villa"} dorsal={7} puesto={"Delantero"} />
-        </View>
-      </View>
     </View>
   )
 }

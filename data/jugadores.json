@@ -1,0 +1,90 @@
+[
+  {
+    "nombre": "Casillas",
+    "nombreCompleto": "Iker Casillas Fernández",
+    "dorsal": 1,
+    "puesto": "Portero",
+    "equipo": "Real Madrid",
+    "edad": 29
+  },
+  {
+    "nombre": "Ramos",
+    "nombreCompleto": "Sergio Ramos García",
+    "dorsal": 15,
+    "puesto": "Defensa",
+    "equipo": "Real Madrid",
+    "edad": 24
+  },
+  {
+    "nombre": "Piqué",
+    "nombreCompleto": "Gerard Piqué Bernabéu",
+    "dorsal": 3,
+    "puesto": "Defensa",
+    "equipo": "FC Barcelona",
+    "edad": 23
+  },
+  {
+    "nombre": "Puyol",
+    "nombreCompleto": "Carles Puyol Saforcada",
+    "dorsal": 5,
+    "puesto": "Defensa",
+    "equipo": "FC Barcelona",
+    "edad": 32
+  },
+  {
+    "nombre": "Capdevila",
+    "nombreCompleto": "Joan Capdevila Méndez",
+    "dorsal": 11,
+    "puesto": "Defensa",
+    "equipo": "Villarreal CF",
+    "edad": 32
+  },
+  {
+    "nombre": "Busquets",
+    "nombreCompleto": "Sergio Busquets Burgos",
+    "dorsal": 16,
+    "puesto": "Centrocampista",
+    "equipo": "FC Barcelona",
+    "edad": 21
+  },
+  {
+    "nombre": "Xabi Alonso",
+    "nombreCompleto": "Xabier Alonso Olano",
+    "dorsal": 14,
+    "puesto": "Centrocampista",
+    "equipo": "Real Madrid",
+    "edad": 28
+  },
+  {
+    "nombre": "Xavi",
+    "nombreCompleto": "Xavier Hernández Creus",
+    "dorsal": 8,
+    "puesto": "Centrocampista",
+    "equipo": "FC Barcelona",
+    "edad": 30
+  },
+  {
+    "nombre": "Iniesta",
+    "nombreCompleto": "Andrés Iniesta Luján",
+    "dorsal": 6,
+    "puesto": "Centrocampista",
+    "equipo": "FC Barcelona",
+    "edad": 26
+  },
+  {
+    "nombre": "Pedro",
+    "nombreCompleto": "Pedro Rodríguez Ledesma",
+    "dorsal": 18,
+    "puesto": "Delantero",
+    "equipo": "FC Barcelona",
+    "edad": 22
+  },
+  {
+    "nombre": "Villa",
+    "nombreCompleto": "David Villa Sánchez",
+    "dorsal": 7,
+    "puesto": "Delantero",
+    "equipo": "Valencia CF",
+    "edad": 28
+  }
+]
