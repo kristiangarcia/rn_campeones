@@ -1,14 +1,18 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleProp, StyleSheet, Text, View, ViewStyle } from 'react-native'
 import React from 'react'
 
 type FutbolistaProps = {
     nombre:string
     dorsal:number
     puesto:string
-    colorFondo?:string
+    style?:StyleProp<FutbolistaStyle>
 }
 
-export default function Futbolista({nombre,dorsal,puesto,style={}}:FutbolistaProps}) {
+type FutbolistaStyle = ViewStyle & {
+    color?: string
+}
+
+export default function Futbolista({nombre,dorsal,puesto,style={}}:FutbolistaProps) {
   style = StyleSheet.flatten(style)
   const estiloContenedorAmpliado = {
     width:style.width ?? styles.contenedor.width,
