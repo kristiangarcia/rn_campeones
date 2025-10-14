@@ -4,7 +4,11 @@ import { getJugador } from '../model/Equipo'
 import Futbolista from './Futbolista'
 import { mostrarInformacion } from '../model/Equipo'
 
-export default function FilaFutbolistas({listaDorsales}) {
+type FilaFutbolistasProps = {
+    listaDorsales:Array<number>
+}
+
+export default function FilaFutbolistas({listaDorsales}:FilaFutbolistasProps) {
     return <View style={styles.fila}>
         {
             listaDorsales.map(getJugador)

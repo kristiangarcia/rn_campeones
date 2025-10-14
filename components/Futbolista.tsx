@@ -6,14 +6,14 @@ type FutbolistaProps = {
     dorsal:number
     puesto:string
     style?:StyleProp<FutbolistaStyle>
-    onPress:null
+    onPress?:() => void
 }
 
 type FutbolistaStyle = ViewStyle & {
     color?: string
 }
 
-export default function Futbolista({nombre,dorsal,puesto,style={},onPress=null}:FutbolistaProps) {
+export default function Futbolista({nombre,dorsal,puesto,style={},onPress}:FutbolistaProps) {
   style = StyleSheet.flatten(style)
   const estiloContenedorAmpliado = {
     width:style.width ?? styles.contenedor.width,
